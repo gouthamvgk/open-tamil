@@ -319,8 +319,6 @@ def auto2unicode(text):
         for ch in encode_keys:
             # check either encode char is presnent in word
             if ch in unique_chars:
-                # found encode
-                print(("Found encode : ", encode_name))
                 encode = _all_encodes_[encode_name]
                 return encode2unicode(text, encode)
             # end of if ch in unique_chars:
